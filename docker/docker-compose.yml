@@ -1,0 +1,7 @@
+web:
+  image: nginx:latest
+  ports:
+    - "8080:80"
+  volumes:
+    - ~/projetos/php:/code
+    - ~/projetos/php/docker/nginx/site.conf:/etc/nginx/conf.d/default.conf
